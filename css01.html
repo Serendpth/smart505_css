@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        font-weight: bold;
+    }
+
+    #div01 .font1{
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 2rem;
+        color: rgba(37, 91, 112, 0.719);
+    }
+
+    .text-start {
+        text-align: start;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-end {
+        text-align: end;
+    }
+
+    .text-justify {
+        text-align: justify;
+    }
+
+    .lhn{
+        font-size: 1.5rem;
+    }
+
+    .lh{
+        border: 5px solid gray;
+        height:100px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #div09{
+        font-size: 2rem;
+    }
+
+    .tdn{
+        text-decoration: none;
+    }
+ 
+    .tdu{
+        text-decoration: underline;
+    }
+  
+    .tdo{
+        text-decoration: overline;
+    }
+
+    .tdl{
+        text-decoration: line-through;
+    }
+
+    .ts{
+        font-size: 3rem;
+        text-shadow: 100px 50px 5px palevioletred;
+    }
+
+    #div10{
+        font-size: 2rem;
+    }
+
+    .ttn{
+        text-transform: none;
+    }
+    .ttc{
+        text-transform: capitalize;
+    }
+    .ttu{
+        text-transform: uppercase;
+    }
+    .ttl{
+        text-transform: lowercase;
+    }
+    .ttf{
+        text-transform: full-width;
+    }
+
+    .ls{
+        letter-spacing: 10px;
+    }
+
+    .book1{
+        list-style: none;
+    }
+
+    .book2{
+        list-style-type: upper-alpha;
+    }
+
+    #div13{
+        list-style-image: ('paris');
+    }
+
+    .llii{
+        list-style-image: url("paris.jpg") ;
+    }
+
+    .pi{
+        list-style-position: inside;
+    }
+
+    .po{
+        list-style-position: outside;
+    }
+</style>
+</head>
+<body>
+    <div id="div01">
+        <h3>구글 폰트 사용하기</h3>
+        <p>구글 폰트를 적용하지 않은 글자</p>
+        <p class="font1">구글 폰트를 적용한 글자</p>
+    </div>
+
+    <hr>
+
+    <div id="div02">
+        <h3>색상 적용하기</h3>
+        <div id="div03"></div>
+        <h3>컬러 이름 사용</h3>
+        <p style="color:slateblue">컬러 이름으로 색상을 변경할 태그</p>
+    </div>
+    
+    <hr>
+
+    <div id="div04">
+        <h3>hex 방식</h3>
+        <p style="color: #fca;">hex 방식으로 색상을 변경할 태그</p>
+    </div>
+
+    <hr>
+
+    <div id="div05">
+        <h3>rgb/rgba 방식</h3>
+        <p style="color:rgba(37, 91, 112, 0 .719)">rgb 방식으로 색상을 변경할 태그</p>
+    </div>
+
+    <hr>
+
+    <div id="div06">
+        <h3>hsl/hsla 방식</h3>
+        <p style="color:hsl(0, 79%, 72%,0.8)">hsl/hsla 방식으로 변경할 태그</p>
+    </div>
+
+    <hr>
+
+    <div id="div07">
+        <h3>text-align 사용</h3>
+        <p class="text-start">start 사용</p>
+        <p class="text-center">center 사용</p>
+        <p class="text-end">end 사용</p>
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facilis earum dolorem reiciendis vitae nesciunt sequi, exercitationem modi aliquid ducimus. Fugiat incidunt dignissimos praesentium vero veritatis adipisci saepe dolores reiciendis!</p>
+    </div>
+    <hr>
+    <div id="div08">
+        <h3>line-height 사용</h3>
+        <p class="lhn">line-height를 적용하지 않은 태그</p>
+        <p class="lh">line-height를 적용한 태그</p>
+    </div>
+    <hr>
+    <div id="div09">
+        <p class="tdn">text-decoration-none</p>
+        <p class="tdu">text-decoration-underline</p>
+        <p class="tdo">text-decoration-overline</p>
+        <p class="tdl">text-decoration-line-through</p>
+    </div>
+    <hr>
+    <div>
+        <p class="ts">text-shadow 그림자</p>
+    </div>
+    <hr>
+    <!-- 거의 안씀 -->
+    <div id="div10">
+        <p class="ttn">none 사용</p>
+        <p class="ttc">capitalize 사용</p>
+        <p class="ttu">upperCase 사용</p>
+        <p class="ttl">LowCase 사용</p>
+        <p class="ttf">full-width 사용</p>
+    </div>
+<hr>
+    <div id="div11">
+        <p class="ls">letter-spacing 사용</p>
+    </div>
+    <hr>
+    <div id="div12">
+        <p>list-style-사용</p>
+        <ul class="book1">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+        </ul>
+        <br>
+        <ul class="book2">
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Jsp</li>
+        </ul>
+        <br>
+        <h3>list-style-image 사용</h3>
+        <ul class="llii">
+        <li class="ii">HTML5</li>
+        <li class="ii">CSS3</li>
+        <li class="ii">Javascript</li>
+    </ul>
+    <br>
+    <ul class="pi">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+    </ul>
+    <br>
+    <ul class="po">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Javascript</li>
+    </ul>
+
+
+    </div>
+
+
+</body>
+</html>
